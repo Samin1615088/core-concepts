@@ -2,6 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let person = {
+    name: 'Samin',
+    job: 'coder'
+  };
+
+  let pStyle = {
+    color: '#FC600A',
+    backgroundColor: '#F7E0D4',
+    borderRadius: "5px",
+    padding: "10px"
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +29,7 @@ function App() {
         >
           Learn React
         </a>
+        <p style={pStyle}>My React Paragraph. Created by {person.job} {person.name}</p>
       </header>
     </div>
   );
